@@ -36,3 +36,8 @@ tests/.excluded_sites
 
 # Vim swap files
 *.swp
+
+# Added by Apify CLI
+storage
+node_modules
+.venv

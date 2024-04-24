@@ -1,0 +1,10 @@
+{
+	"actorSpecification": 1,
+	"name": "sherlock",
+	"version": "0.0",
+	"buildTag": "latest",
+	"environmentVariables": {},
+  "dockerFile": "./Dockerfile", 
+  "dockerContext": "../"
+
+}
