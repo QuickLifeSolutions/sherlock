@@ -25,6 +25,7 @@ RUN pip3 install --no-cache-dir -r requirements.txt -f /wheels \
 
 #ENTRYPOINT ["python", "sherlock.py"]
 
+
 WORKDIR .actor
 
 RUN apt-get update; apt-get install curl gpg -y
@@ -40,7 +41,7 @@ RUN corepack enable
 RUN yarn install
 ENV PATH="${PATH}:/opt/sherlock/.actor/apify-cli/node_modules/.bin"
 
-WORKDIR /opt/sherlock/sherlock
+WORKDIR /opt/sherlock/
 
-CMD ../.actor/bin/start.sh
+CMD ./actor.sh
 

@@ -5,6 +5,6 @@
 	"buildTag": "latest",
 	"environmentVariables": {},
   "dockerFile": "./Dockerfile", 
-  "dockerContext": "../"
-
+  "dockerContext": "../",
+  "input": "./input_schema.json"
 }
