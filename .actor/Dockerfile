@@ -27,21 +27,14 @@ RUN pip3 install --no-cache-dir -r requirements.txt -f /wheels \
 
 
 WORKDIR .actor
-
 RUN apt-get update; apt-get install curl gpg -y
 RUN mkdir -p /etc/apt/keyrings
 RUN curl -fsSL https://deb.nodesource.com/gpgkey/nodesource-repo.gpg.key | gpg --dearmor -o /etc/apt/keyrings/nodesource.gpg
 RUN echo "deb [signed-by=/etc/apt/keyrings/nodesource.gpg] https://deb.nodesource.com/node_20.x nodistro main" | tee /etc/apt/sources.list.d/nodesource.list
 RUN apt-get update && apt-get install -y curl bash git jq jo xz-utils nodejs
-
-RUN git clone https://github.com/netmilk/apify-cli.git
-WORKDIR apify-cli
-RUN npm install corepack
-RUN corepack enable
-RUN yarn install
-ENV PATH="${PATH}:/opt/sherlock/.actor/apify-cli/node_modules/.bin"
+RUN npm -g install https://github.com/netmilk/apify-cli/releases/download/latest/package.tgz
 
 WORKDIR /opt/sherlock/
 
-CMD ./actor.sh
-
+COPY .actor .actor
+CMD ./.actor/bin/actor.sh
