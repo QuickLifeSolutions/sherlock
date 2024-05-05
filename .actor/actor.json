@@ -6,5 +6,8 @@
 	"environmentVariables": {},
   "dockerFile": "./Dockerfile", 
   "dockerContext": "../",
-  "input": "./input_schema.json"
+  "input": "./input_schema.json",
+  "storages": {
+    "dataset": "./dataset_schema.json"
+  }
 }
