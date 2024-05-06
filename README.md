@@ -21,8 +21,10 @@
 </a>
 </p>
 
-
 ## Installation
+
+[![Build Status](https://apify-badger.vercel.app/badge/netmilk/sherlock)](https://travis-ci.org/travis-ci/travis-web)
+
 
 ```console
 # clone the repo
