@@ -23,7 +23,7 @@
 
 ## Installation
 
-[![Build Status](https://apify-badger.vercel.app/badge/netmilk/sherlock)](https://travis-ci.org/travis-ci/travis-web)
+[![Build Status](https://apify-badger.vercel.app/badge/netmilk/sherlock)](apify.com/netmilk/sherlock)
 
 
 ```console
