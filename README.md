@@ -23,7 +23,7 @@
 
 ## Installation
 
-[![Build Status](https://apify-badger.vercel.app/badge/netmilk/sherlock)](apify.com/netmilk/sherlock)
+[![Build Status](https://apify-badger.vercel.app/badge/netmilk/sherlock)](https://apify.com/netmilk/sherlock)
 
 
 ```console
